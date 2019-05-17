@@ -1,5 +1,8 @@
 This is a React-Redux practice based on
 https://github.com/NimaBoscarino/react-redux-boilerplate
+  
+I've implemented new features and change a little bit the presentation.
+
 
 original README.md:
 # Simple Redux Boilerplate
