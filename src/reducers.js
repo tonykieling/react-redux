@@ -4,7 +4,6 @@ function nameReducer(state = {
   name: 'Initial Name'
 }, action) {
   switch (action.type) {
-    /* istanbul ignore next */
     case 'NAME_CHANGE':
       return {
         name: action.name
@@ -18,7 +17,6 @@ function colorReducer(state = {
   color: 'red'
 }, action) {
   switch (action.type) {
-    /* istanbul ignore next */
     case 'COLOR_CHANGE':
       return {
         color: action.color
@@ -28,7 +26,4 @@ function colorReducer(state = {
   }
 }
 
-export default combineReducers({
-  nameData: nameReducer,
-  colorData: colorReducer
-})
+export default combineReducers({nameData: nameReducer, colorData: colorReducer})

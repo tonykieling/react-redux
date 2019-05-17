@@ -7,6 +7,7 @@ const ColorController = (props) => {
       <button onClick={() => props.onColorChange('Red')}>Red</button>
       <button onClick={() => props.onColorChange('Green')}>Green</button>
       <button onClick={() => props.onColorChange('Blue')}>Blue</button>
+      <button onClick={() => props.onColorChange('Yellow')}>Yellow</button>
     </div>
   )
 }
