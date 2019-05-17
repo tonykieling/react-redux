@@ -35,8 +35,4 @@ function colorReducer(state = {
   }
 }
 
-// colorBackReducer(state = { color = "lightgray"}, action) {
-
-// }
-
 export default combineReducers({nameData: nameReducer, colorData: colorReducer})

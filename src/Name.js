@@ -13,7 +13,7 @@ class Name extends Component {
 }
 
 const mapStateToProps = state => {
-  // console.log(state)
+  console.log("name-state: ",state)
   return {
     name: state.nameData.name,
     color: state.colorData.color,
