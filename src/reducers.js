@@ -14,16 +14,29 @@ function nameReducer(state = {
 }
 
 function colorReducer(state = {
-  color: 'red'
+  color: 'red',
+  backColor: "lightgrey"
 }, action) {
   switch (action.type) {
     case 'COLOR_CHANGE':
       return {
-        color: action.color
+        color: action.color,
+        backColor: state.backColor
       };
+      //NEW
+      case 'BACK_CHANGE' :
+      return {
+        color: state.color,
+        backColor: action.color
+      }
+      // /New
     default:
       return state;
   }
 }
+
+// colorBackReducer(state = { color = "lightgray"}, action) {
+
+// }
 
 export default combineReducers({nameData: nameReducer, colorData: colorReducer})

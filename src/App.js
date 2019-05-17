@@ -3,6 +3,7 @@ import './App.css';
 import Name from './Name'
 import NameController from './NameController'
 import ColorController from './ColorController'
+import BackColorController from './BackColorController'
 
 class App extends Component {
   state = {name: 'Nima'}
@@ -12,6 +13,7 @@ class App extends Component {
         <Name />
         <NameController />
         <ColorController />
+        <BackColorController />
       </div>
     );
   }
