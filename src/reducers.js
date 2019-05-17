@@ -3,7 +3,6 @@ import { combineReducers } from 'redux';
 function nameReducer(state = {
                               name: 'Initial Name'
                             }, action) {
-console.log("action.name== ", action.name) 
   switch (action.type) {
     case 'NAME_CHANGE':
       return ((action.name) === 'reset' ? 
@@ -13,7 +12,7 @@ console.log("action.name== ", action.name)
         {
           name: action.name
         })
-        
+
     default:
       return state;
   }

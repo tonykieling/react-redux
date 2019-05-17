@@ -10,8 +10,6 @@ import * as serviceWorker from './serviceWorker';
 // Create redux store
 const store = configureStore();
 
-console.log(store)
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
