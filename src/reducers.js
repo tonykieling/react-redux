@@ -13,10 +13,6 @@ console.log("action.name== ", action.name)
         {
           name: action.name
         })
-      // return {
-      //   name: action.name
-      // };
-
     default:
       return state;
   }
@@ -28,10 +24,15 @@ function colorReducer(state = {
                             }, action) {
   switch (action.type) {
     case 'COLOR_CHANGE':
-      return {
-        color: action.color,
-        backColor: state.backColor
-      };
+      return ((action.color) === "reset"  ?
+        {
+          color: "black",
+          backColor: state.backColor
+        } :
+        {
+          color: action.color,
+          backColor: state.backColor
+        })
 
     case 'BACK_CHANGE' :
       return {
