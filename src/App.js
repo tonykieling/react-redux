@@ -10,10 +10,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <hr />
         <Name />
+        <hr />
+        <h2>Name</h2>
         <NameController />
+        <hr />
+        <h2>Font Color</h2>
         <ColorController />
+        <hr />
+        <h2>Background Color</h2>
         <BackColorController />
+        <hr />
       </div>
     );
   }

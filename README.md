@@ -1,3 +1,7 @@
+This is a React-Redux practice based on
+https://github.com/NimaBoscarino/react-redux-boilerplate
+
+original README.md:
 # Simple Redux Boilerplate
 
 ![](https://cl.ly/8a48a60c1933/Screen%20Recording%202019-04-11%20at%2004.59%20PM.gif)
