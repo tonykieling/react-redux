@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 class Name extends Component {
   render() {
     return (
-      <div id="tLabel" style={{marginTop: 50, marginBottom: 20}}>
+      <div id="tLabel" style={{marginTop: 25, marginBottom: 25}}>
         <span style={{color: this.props.color, background: this.props.backColor, fontSize: 40}}>
           {this.props.name}
         </span>
